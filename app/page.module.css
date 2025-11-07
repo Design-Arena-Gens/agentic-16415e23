@@ -1,0 +1,164 @@
+.container {
+  min-height: 100vh;
+  padding: 2rem;
+  background: #fafafa;
+}
+
+.main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+  letter-spacing: -0.5px;
+}
+
+.totalBox {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.totalLabel {
+  font-size: 0.875rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.totalAmount {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+
+.form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: white;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #1a1a1a;
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #333;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.expense {
+  background: white;
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s;
+}
+
+.expense:hover {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.expenseInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.expenseDesc {
+  font-size: 1rem;
+  color: #1a1a1a;
+}
+
+.expenseDate {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.expenseRight {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.expenseAmount {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.deleteBtn:hover {
+  color: #e74c3c;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .totalAmount {
+    font-size: 1.5rem;
+  }
+}
